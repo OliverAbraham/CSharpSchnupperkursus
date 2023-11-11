@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Threading;
 using System.Windows;
+using System.Windows.Media;
 
 namespace QuizAppWPF
 {
@@ -43,6 +46,7 @@ namespace QuizAppWPF
         public MainWindow()
         {
             InitializeComponent();
+            Weiter.Visibility = Visibility.Collapsed;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -82,9 +86,31 @@ namespace QuizAppWPF
         private void Reaktion(string tipp)
         {
             if (_quizfragen[_aktuelleFrage].RichtigeAntwort == tipp)
-                MessageBox.Show("Richtig !");
+            {
+                Frage.Text = "Richtig !";
+                Frage.Background = Brushes.LightGreen;
+            }
             else
-                MessageBox.Show("Leider falsch !");
+            {
+                Frage.Text = "Leider falsch !";
+                Frage.Background = Brushes.Red;
+            }
+
+            Weiter.Visibility = Visibility.Visible;
+            AntwortA.Visibility = Visibility.Collapsed;
+            AntwortB.Visibility = Visibility.Collapsed;
+            AntwortC.Visibility = Visibility.Collapsed;
+            AntwortD.Visibility = Visibility.Collapsed;
+        }
+
+        private void Weiter_Click(object sender, RoutedEventArgs e)
+        {
+            Weiter.Visibility = Visibility.Collapsed;
+            AntwortA.Visibility = Visibility.Visible;
+            AntwortB.Visibility = Visibility.Visible;
+            AntwortC.Visibility = Visibility.Visible;
+            AntwortD.Visibility = Visibility.Visible;
+            Frage.Background = Brushes.Transparent;
             ZeigeNächsteFrage();
         }
     }

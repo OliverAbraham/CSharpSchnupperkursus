@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Quiz App", "Quiz App", "{55018B92-2CA6-49CE-A7C4-91964685DFC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Quiz App", "1 Quiz App", "{55018B92-2CA6-49CE-A7C4-91964685DFC0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizAppWPF", "QuizAppWPF\QuizAppWPF\QuizAppWPF.csproj", "{DFE8B7F7-370D-41C1-A2A0-93D1D0A1182E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizAppConsole", "QuizAppConsole\QuizAppConsole.csproj", "{4634A6E9-5933-4449-A090-D31C556A2009}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{2430F51E-8A88-4450-8AAD-E8FDF929A178}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Solution Items", "2 Solution Items", "{2430F51E-8A88-4450-8AAD-E8FDF929A178}"
 	ProjectSection(SolutionItems) = preProject
 		Ciridata.ico = Ciridata.ico
 		Ciridata.png = Ciridata.png
